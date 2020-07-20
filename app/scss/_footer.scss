@@ -1,0 +1,155 @@
+.footer {
+
+    padding-top: 40px;
+
+    color: #fff;
+
+    background-color: #24241f;
+
+    &__upper {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 15px;
+        padding-bottom: 65px;
+
+        border-bottom: 1px solid rgba($color: #fff, $alpha: 0.2);
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        width: 450px;
+    }
+
+    &__nav-list {
+        margin: 0;
+        padding: 0;
+    }
+
+    &__nav-item + &__nav-item {
+        margin-top: 10px;
+    }
+
+    &__nav-link {
+        font-size: 14px;
+        font-weight: 300;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__social {
+        width: 200px;
+    }
+
+    &__social-title {
+        margin: 0;
+        margin-bottom: 8px;
+    }
+
+    &__social-list {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        width: 105px;
+    }
+
+    &__social-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 31px;
+        height: 31px;
+        border: solid 1px #ffffff;
+        border-radius: 3px;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 110px;
+    }
+
+    &__copyright {
+        margin: 0;
+
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    &__developed {
+        display: flex;
+        align-items: center;
+    }
+
+    &__site {
+        position: relative;
+        top: 5px;
+    }
+
+    &__logo {
+        margin-left: 10px;
+    }
+}
+
+@media(max-width: 730px) {
+
+    .footer { 
+
+        &__nav {
+            flex-direction: column;
+            width: 200px;
+        }
+
+        &__nav-list {
+            margin-top: 10px;
+        }
+
+        &__social {
+            align-self: flex-end;
+        }
+
+    }
+}
+
+@media(max-width: 580px) {
+
+    .footer {
+        
+        padding-bottom: 25px;
+
+        &__bottom {
+            flex-direction: column;
+        }
+
+        &__copyright {
+            margin: 25px;
+        }
+
+    }
+}
+
+@media(max-width: 470px) {
+
+    .footer {
+
+        &__upper {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__social {
+            margin-top: 30px;
+            align-self: center;
+        }
+
+        &__copyright {
+            font-size: 12px;
+        }
+
+    }
+}
